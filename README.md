@@ -11,16 +11,19 @@ Modification du fichier README.md
 
 ![Diag Relationnel](https://github.com/skock056/csi2532_playground/blob/lab04/lab04/1.PNG?raw=true)
 
+<br/>
 
 3. Chaque professeur enseigne exactement un cours (ni plus, ni moins).
 
 ![Diag Relationnel](https://github.com/skock056/csi2532_playground/blob/lab04/lab04/3.PNG?raw=true)
 
+<br/>
 
 5. Les professeurs peuvent enseigner le même cours sur plusieurs semestres et chaque doit être enregistrée.
 
 ![Diag Relationnel](https://github.com/skock056/csi2532_playground/blob/lab04/lab04/5.PNG?raw=true)
 
+<br/>
 
 6. Supposons maintenant que certains cours puissent être enseignés conjointement par une équipe de professeurs, mais il est possible qu'aucun professeur dans une équipe ne puisse enseigner le cours. Modélisez cette situation en introduisant des ensembles d'entités et des ensembles de relations supplémentaires si nécessaire.
 
@@ -51,6 +54,7 @@ CREATE TABLE Teaches (
  );
 ```
 
+<br/>
 
 3. Chaque professeur enseigne exactement un cours (ni plus, ni moins).
 
@@ -68,6 +72,7 @@ CREATE TABLE Professor (
  );
 ```
 
+<br/>
 
 5. Les professeurs peuvent enseigner le même cours sur plusieurs semestres et chaque doit être enregistrée.
 
@@ -98,6 +103,7 @@ CREATE TABLE Teaches (
  );
 ```
 
+<br/>
 
 6. Supposons maintenant que certains cours puissent être enseignés conjointement par une équipe de professeurs, mais il est possible qu'aucun professeur dans une équipe ne puisse enseigner le cours. Modélisez cette situation en introduisant des ensembles d'entités et des ensembles de relations supplémentaires si nécessaire.
 
@@ -134,6 +140,7 @@ CREATE TABLE MemberOf (
   PRIMARY KEY (ssn, groupid)
  );
 ```
+<br/>
 
 # lab03 - Diagrammes ER
 
