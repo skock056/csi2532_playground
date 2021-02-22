@@ -3,13 +3,32 @@ Dépôt de Sébastien Kock 300137051
 
 Modification du fichier README.md
 
-## lab04 - Diagrammes et schémas relationnels
+# lab04 - Diagrammes et schémas relationnels
 
-# Schémas relationnels (SQL)
+## Diagrammes relationnels
+
+1. Les professeurs peuvent enseigner le même cours sur plusieurs semestres et seule la plus récente doit être enregistrée.
+
+![Diag Relationnel](https://github.com/skock056/csi2532_playground/blob/lab04/lab04/1.PNG?raw=true)
 
 
+3. Chaque professeur enseigne exactement un cours (ni plus, ni moins).
 
-1
+![Diag Relationnel](https://github.com/skock056/csi2532_playground/blob/lab04/lab04/3.PNG?raw=true)
+
+
+5. Les professeurs peuvent enseigner le même cours sur plusieurs semestres et chaque doit être enregistrée.
+
+![Diag Relationnel](https://github.com/skock056/csi2532_playground/blob/lab04/lab04/5.PNG?raw=true)
+
+
+6. Supposons maintenant que certains cours puissent être enseignés conjointement par une équipe de professeurs, mais il est possible qu'aucun professeur dans une équipe ne puisse enseigner le cours. Modélisez cette situation en introduisant des ensembles d'entités et des ensembles de relations supplémentaires si nécessaire.
+
+![Diag Relationnel](https://github.com/skock056/csi2532_playground/blob/lab04/lab04/6.PNG?raw=true)
+
+## Schémas relationnels (SQL)
+
+1. Les professeurs peuvent enseigner le même cours sur plusieurs semestres et seule la plus récente doit être enregistrée.
 
 ```sql
 CREATE TABLE Course (
@@ -32,7 +51,8 @@ CREATE TABLE Teaches (
  );
 ```
 
-3
+
+3. Chaque professeur enseigne exactement un cours (ni plus, ni moins).
 
 ```sql
 CREATE TABLE Course (
@@ -48,7 +68,8 @@ CREATE TABLE Professor (
  );
 ```
 
-5
+
+5. Les professeurs peuvent enseigner le même cours sur plusieurs semestres et chaque doit être enregistrée.
 
 ```sql
 CREATE TABLE Course (
@@ -77,7 +98,8 @@ CREATE TABLE Teaches (
  );
 ```
 
-6
+
+6. Supposons maintenant que certains cours puissent être enseignés conjointement par une équipe de professeurs, mais il est possible qu'aucun professeur dans une équipe ne puisse enseigner le cours. Modélisez cette situation en introduisant des ensembles d'entités et des ensembles de relations supplémentaires si nécessaire.
 
 ```sql
 CREATE TABLE Course (
@@ -113,7 +135,7 @@ CREATE TABLE MemberOf (
  );
 ```
 
-## lab03 - Diagrammes ER
+# lab03 - Diagrammes ER
 
 1. Les professeurs peuvent enseigner le même cours sur plusieurs semestres et seule la plus récente doit être enregistrée.
 ![Diagram ER](https://github.com/skock056/csi2532_playground/blob/lab03/lab03/1.PNG?raw=true)
