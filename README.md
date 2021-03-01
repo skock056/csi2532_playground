@@ -3,6 +3,8 @@ Dépôt de Sébastien Kock 300137051
 
 Modification du fichier README.md
 
+# lab05 (voir dossier 'lab05')
+
 # lab04 - Diagrammes et schémas relationnels
 
 ## Diagrammes relationnels
