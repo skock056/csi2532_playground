@@ -3,6 +3,123 @@ Dépôt de Sébastien Kock 300137051
 
 Modification du fichier README.md
 
+# lab06
+
+## 1
+
+|name|birthplace|
+|---|---|
+|Caravaggio|Milan|
+|Smith|Ottawa|
+|Picasso|Malaga|
+|Leonardo|Florence|
+|Michelangelo|Arezzo|
+|Josefa|Seville|
+|Hans Hofmann|Weisenburg|
+|John|San Francisco|
+
+```sql
+SELECT name, birthplace FROM artists;
+```
+
+## 2
+
+|title|price|
+|---|---|
+|Blue|10000.00|
+|Waves|4000.00|
+|Three Musicians|11000.00|
+
+```sql
+SELECT title, price FROM artworks
+    WHERE year > 1600;
+```
+
+## 3
+
+|title|type|
+|---|---|
+|Blue|Modern|
+|Waves||
+|Three Musicians|Modern|
+
+```sql
+SELECT title, type FROM artworks
+    WHERE year = 2000 OR artist_name = 'Picasso';
+```
+
+## 4
+
+|name|birthplace|
+|---|---|
+|Picasso|Malaga|
+|John|San Francisco|
+
+```sql
+SELECT name, birthplace FROM artists
+    WHERE dateofbirth > '12-31-1879' AND dateofbirth < '01-01-1931';
+```
+
+## 5
+
+|name|country|
+|---|---|
+|Caravaggio||
+|Smith||
+|Leonardo|Italy|
+|Michelangelo|Italy|
+|Josefa|Spain|
+|Hans Hofmann|Germany|
+|John|USA|
+
+```sql
+SELECT name, country FROM artists
+    WHERE style = 'Modern' OR style = 'Baroque' OR style = 'Renaissance';
+```
+
+## 6
+
+|title|year|type|price|artist_name|
+|---|---|---|---|---|
+|Blue|2000|Modern|10000.00|Smith|
+|The Cardsharps|1594|Baroque|40000.00|Caravaggio|
+|Three Musicians|1921|Modern|11000.00|Picasso|
+|Waves|2000||4000.00|Smith|
+
+```sql
+SELECT * FROM artworks
+    ORDER BY title ASC;
+```
+
+## 7
+
+|name|id|
+|---|---|
+|Emre|4|
+|Saeid|5|
+
+```sql
+SELECT name, id FROM customers
+    INNER JOIN likeartists ON customers.id = likeartists.customer_id
+    WHERE artist_name = 'Picasso';
+```
+
+## 8
+
+|name|
+|---|
+|Saeid|
+
+```sql
+SELECT name FROM customers
+    INNER JOIN likeartists ON customers.id = likeartists.customer_id
+    WHERE artist_name IN(
+        SELECT artist_name FROM likeartists
+        INNER JOIN artists ON likeartists.artist_name = artists.name
+        WHERE style = 'Renaissance')
+        AND amount > 30000;
+```
+
 # lab05 (voir dossier 'lab05')
 
 # lab04 - Diagrammes et schémas relationnels
