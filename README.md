@@ -3,6 +3,61 @@ Dépôt de Sébastien Kock 300137051
 
 Modification du fichier README.md
 
+# lab09
+## Question 1
+
+1a:
+    a) Clés candidates de R: AB, BC, BD
+    b) R est dans 3NF, R n'est pas dans BCNF.
+    
+1b:
+    a) Clés candidates de R: A, B, C, D
+    b) R est dans 3NF et BCNF.
+
+1c:
+    a) Clés candidates de R: B
+    b) R n'est pas dans 3NF ou BCNF.
+    
+1d:
+    a) Clés candidates de R: ABC, BCD
+    b) R est dans 3NF, R n'est pas dans BCNF.
+    
+1e:
+    a) Clés candidates de R: AB
+    b) R n'est pas dans 3NF ou BCNF.
+    
+## Question 2
+
+2a:
+    AB->D est valide.
+        Preuve: Règle de transitivité
+        si 𝛼->β et β->𝛾, alors 𝛼->𝛾
+        AB->C et BC->AD donc, AB->D
+        
+2b: 
+    A->C est invalide.
+        Contre-exemple: Pour que A->C, il faut A->B.
+        
+2c: 
+    B->C est invalide.
+        Contre-exemple: Pour que B->C, il faut A->B.
+        
+2d: 
+    A->C OR B->C est valide.
+        Preuve: règle de décomposition
+        if 𝛼->β𝛾 then 𝛼->β and 𝛼->𝛾
+        if AB->C then A->C and B->C.
+        
+## Question 3
+
+Fd = {D->A, B->D} est la couverture canonique de F = {B->A, D->A, AB->D}.
+
+## Question 4
+
+ABH -> C est la décomposition BCNF de R. 
+    
+  
+
 # lab06
 
 ## 1
