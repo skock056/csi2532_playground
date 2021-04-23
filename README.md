@@ -3,6 +3,95 @@ Dépôt de Sébastien Kock 300137051
 
 Modification du fichier README.md
 
+# Devoir 2
+
+## Q1
+
+a)
+    Les clés candidates sont AB, BC et BD.
+    
+b)
+    Les violations de BCNF pour R sont les dépendances fonctionnelles C->D et D->A car ils sont non-triviales et C et D ne sont pas des super-clés.
+    Les relations qui sont dans BCNF après avoir décomposer sont AD avec dépendance D->A, CD avec dépendance C->D et BC avec aucune dépendance.
+    
+c)
+    La dépendance AB->C n'est pas conservée par la décomposition BCNF.
+    
+## Q2
+
+a)
+    Les quatre dépendances fonctionnelles sont NIN contractNo -> heuresPerWeek, NIN -> eName, hotelNo -> hotelLocation et contractNo -> hotelNo
+    
+b)
+    La clé candidate est NIN contractNo.
+
+c)
+    La relation R n'est pas dans 3NF donc on ne peut pas normaliser.
+    
+## Q3
+
+a)
+<br/>
+![RA](https://github.com/skock056/csi2532_playground/blob/devoir2/devoir2/3a.PNG?raw=true)
+
+b)
+<br/>
+![RA](https://github.com/skock056/csi2532_playground/blob/devoir2/devoir2/3b.PNG?raw=true)
+
+c)
+<br/>
+![TRC](https://github.com/skock056/csi2532_playground/blob/devoir2/devoir2/3c.PNG?raw=true)
+
+d)
+<br/>
+![RDC](https://github.com/skock056/csi2532_playground/blob/devoir2/devoir2/3d.PNG?raw=true)
+
+e)
+<br/>
+![RDC](https://github.com/skock056/csi2532_playground/blob/devoir2/devoir2/3e.PNG?raw=true)
+
+## Q4
+
+1 correspond à B
+2 correspond à E
+3 correspond à A
+4 correspond à C
+5 correspond à D
+
+## Q5
+
+a)
+<br/>
+![Arbre](https://github.com/skock056/csi2532_playground/blob/devoir2/5a.PNG?raw=true)
+
+b)
+<br/>
+![Arbre](https://github.com/skock056/csi2532_playground/blob/devoir2/5b.PNG?raw=true)
+
+## Q6
+
+a)
+<br/>
+![Bitmap](https://github.com/skock056/csi2532_playground/blob/devoir2/devoir2/6a.PNG?raw=true)
+
+b) 
+<br/>
+![Bitmap](https://github.com/skock056/csi2532_playground/blob/devoir2/devoir2/6b.PNG?raw=true)
+
+i) Pour trouver les marques d'autos sans autos noires, il faut prendre les rangées de l'index avec la valeur 0 dans la colonne "Black" et la colonne qui nous donne une valeur de 1 pour la marque est celle qui n'offre pas la couleur noire.
+
+   ii) Le nombre total de voitures Opel rouges avec une score de risque moyen est 1.
+    
+## Q7
+
+a)
+<br/>
+![Index](https://github.com/skock056/csi2532_playground/blob/devoir2/devoir2/7.PNG?raw=true)
+
+b)
+<br/>
+Cette fonction n'est pas une bonne fonction de hachage car il y a beaucoup de débordements (overflows). Une fonction plus efficace cherche a minimiser le overflow.
+
 # lab09
 ## Question 1
 
